@@ -78,6 +78,7 @@ int main(){
     cout << "\nResult of multiplication:\n";
     result.display();
     cout << "\nEnd of matrix operations.\n";
+
     
     return 0;
 }

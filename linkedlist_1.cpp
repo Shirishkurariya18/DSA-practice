@@ -105,6 +105,8 @@ temp->next = newNode;
         }
         cout << endl;
     }
+    
+// for search in linkedlist 
 
     int search(int key){
         Node* temp = head;

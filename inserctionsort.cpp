@@ -11,7 +11,7 @@ void insertionsort(int arr[], int n) {
         while (prev >= 0 && arr[prev] > curr)
         {
             arr[prev+1] = arr[prev];
-            prev--;
+            prev--; 
         }
 
        arr[prev+1] = curr; // placing the curr el in its correct position 

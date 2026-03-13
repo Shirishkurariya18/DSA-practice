@@ -40,8 +40,13 @@ public:
         }
     }
     void dfs(){
-        vector<bool> vis(7 , false);
-        dfsHelper(0, vis);
+        vector<bool> vis(V , false); // use actual vertex count
+        for(int i = 0; i < V; i++){
+            if(!vis[i]){
+                dfsHelper(i, vis);
+            }
+        }
+       cout << endl;
     }
 
     // HashPath problem
@@ -73,16 +78,17 @@ public:
 
 int main(){
 
-   Graph graph(7);
+   Graph graph(10); // 0..9 used in edges
 
-   graph.addEdge(0,1);
    graph.addEdge(0,2);
-   graph.addEdge(1,3);
-   graph.addEdge(2,4);
-   graph.addEdge(3,4);
-   graph.addEdge(3,5);
-   graph.addEdge(4,5);
-   graph.addEdge(5,6);
+   graph.addEdge(2,5);
+   graph.addEdge(2,0);
+   graph.addEdge(1,6);
+   graph.addEdge(6,4);
+   graph.addEdge(4,3);
+   graph.addEdge(4,9);
+   graph.addEdge(3,7);
+   graph.addEdge(3,8);
 
   graph.dfs();
 //   cout << graph.hashPath(5,6) << endl;

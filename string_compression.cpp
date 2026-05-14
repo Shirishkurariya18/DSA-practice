@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    string str1 = "aaabbc";
+    string str1 = "aaaabbccoo";
     unordered_map<char, int> freq;
 
     for (char ch : str1) {

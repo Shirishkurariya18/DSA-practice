@@ -24,7 +24,7 @@ bool canPartition(vector<int>& nums) {
 
 int main(){
 
-    vector<int> nums = {1, 5, 10, 5};
+    vector<int> nums = {1, 5, 11, 5};
     bool result = canPartition(nums);
     cout << "Can partition: " << (result ? "Yes" : "No") << endl;
     return 0;
